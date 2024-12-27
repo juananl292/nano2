@@ -57,3 +57,13 @@
 &led_strip {
     chain-length = <27>;
 };
+&gpio {
+        trigger = <&gpio1 10 GPIO_ACTIVE_LOW>;
+        wakeup-source = <&gpio1 10>;
+        extra-gpios = <&gpio1 11>;
+ };
+
+# Fuentes de despertador durante el apagado suave (si lo deseas)
+ &soft_off_wakeup_sources {
+    wakeup-sources = <&gpio1 10>;
+ };
