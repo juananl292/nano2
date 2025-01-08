@@ -44,7 +44,7 @@
         compatible = "zmk,combos";
 
         combo_ctrl_alt_del {
-            timeout-ms = <50>;
+            timeout-ms = <200>;
             key-positions = <0 1 2>; // Ajusta estas posiciones según las teclas que desees usar
             bindings = <&kp LCTRL &kp LALT &kp DEL>;
         };
