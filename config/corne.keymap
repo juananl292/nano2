@@ -45,8 +45,8 @@
 
         combo_ctrl_alt_del {
             timeout-ms = <200>;
-            key-positions = <0 1 2>; // Ajusta estas posiciones según las teclas que desees usar
-            bindings = <&kp LCTRL &kp LALT &kp DEL>;
+            key-positions = <0 1>; // Ajusta estas posiciones según las teclas que desees usar
+            bindings = <&kp LCTRL &kp ESC>;
         };
     };
 };
